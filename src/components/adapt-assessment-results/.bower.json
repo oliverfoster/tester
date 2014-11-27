@@ -1,0 +1,24 @@
+{
+  "name": "adapt-results",
+  "homepage": "https://github.com/cgkineo/adapt-results",
+  "authors": [
+    "Dan Ghost <danielghost@kineo.com>"
+  ],
+  "description": "A simple core contributed text component",
+  "main": "/js/adapt-results.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "f895686257",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "f895686257c4df5d48f22f4df78610273fe6aac3"
+  },
+  "_source": "https://github.com/cgkineo/adapt-assessment-results.git",
+  "_target": "master",
+  "_originalSource": "adapt-assessment-results",
+  "_direct": true
+}

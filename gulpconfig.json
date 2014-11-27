@@ -1,0 +1,244 @@
+{
+	"src": {
+		"path": "src",
+		"core": {
+			"path": "src",
+			"javascript": {
+				"paths": [
+					"src/core/js/core.js"
+				]
+			},
+			"index": {
+				"paths": [
+					"src/index.html"
+				]
+			},
+			"index-debug": {
+				"paths": [
+					"src/index.html"
+				]
+			},
+			"assets": {
+				"paths": [
+					"src/core/**/assets/**/*",
+					"src/core/**/assets/**"
+				]
+			}
+		},
+		"app": {
+			"path": "src",
+			"javascript": {
+				"paths": [
+					"src/core/js/**/*.js",
+					"src/components/**/js/*.js",
+					"src/extensions/**/js/*.js",
+					"src/menu/**/js/*.js",
+					"src/theme/**/js/*.js",
+					"!src/**/assets/**/*.js",
+					"!src/core/js/core.js"
+				]
+			},
+			"less": {
+				"paths": [
+					"src/core/less/**/less/*.less",
+					"src/components/**/less/*.less",
+					"src/extensions/**/less/*.less",
+					"src/menu/**/less/*.less",
+					"src/theme/**/less/*.less",
+					"!src/**/assets/**/*.less"
+				]
+			},
+			"handlebars": {
+				"paths": [
+					"src/core/less/**/templates/*.hbs",
+					"src/components/**/templates/*.hbs",
+					"src/extensions/**/templates/*.hbs",
+					"src/menu/**/templates/*.hbs",
+					"src/theme/**/templates/*.hbs",
+					"!src/**/assets/**/*.hbs"
+				]
+			},
+			"assets": {
+				"paths": [
+					"src/core/**/assets/**/*",
+					"src/components/**/assets/**/*",
+					"src/extensions/**/assets/**/*",
+					"src/menu/**/assets/**/*",
+					"src/theme/**/assets/**/*"
+				]
+			}
+		},
+		"configs": {
+			"root": "src/courses",
+			"path": "src/courses/{{config}}",
+			"less": {
+				"paths": [
+					"src/courses/{{config}}/**/*.less",
+					"!src/courses/{{config}}/**/assets/**/*.less"
+				]
+			},
+			"handlebars": {
+				"paths": [
+					"src/courses/{{config}}/**/*.html",
+					"!src/courses/{{config}}/**/assets/**/*.html"
+				]
+			},
+			"assets": {
+				"paths": [
+					"src/courses/{{config}}/**/assets/**/*",
+					"src/courses/{{config}}/**/assets/**"
+				]
+			}
+		}
+	},
+	"dest": {
+		"path": "build",
+		"sourcemappath": "../../",
+		"sourcemappathtruncateby": 0,
+		"core": {
+			"javascript": {
+				"sourcemappath": "../../",
+				"sourcemapbase": "../",
+				"file": "adapt/js/core.min.js"
+			},
+			"index": {
+				"file": "index.html"
+			}
+		},
+		"app": {
+			"javascript": {
+				"sourcemappath": "../../",
+				"sourcemapbase": "../",
+				"file": "adapt/js/app.min.js"
+			},
+			"css": {
+				"sourcemappath": "../../",
+				"sourcemapbase": "../",
+				"file": "adapt/css/app.css"
+			},
+			"templates": {
+				"sourcemappath": "../../",
+				"sourcemapbase": "../",
+				"file": "adapt/js/templates.js"
+			}
+		},
+		"configs": {
+			"css": {
+				"sourcemappath": "../../",
+				"sourcemapbase": "../",
+				"file": "adapt/css/config.css"
+			},
+			"templates": {
+				"sourcemappath": "../../",
+				"sourcemapbase": "../",
+				"file": "adapt/js/config.js"
+			},
+			"assets": {
+				"path": "assets",
+				"compare": [
+					"{{destination}}/assets/**/*"
+				]
+			}
+		},
+		"loader": {
+			"javascript": {
+				"file": "adapt/js/loader.js"
+			}
+		}
+	},
+	"clean": {
+		"paths": [
+			"adapt/js/**/*",
+			"adapt/css/**/*",
+			"index.html"
+		]
+	},
+	"map": {
+		"app": {
+			"*" : {
+				"core/js/libraries/velocity": "velocity"
+			}
+		}
+	},
+	"shim": {
+
+	},
+	"paths": {
+		"app": {
+			"coreJS": "core/js",
+			"app": "core/js/app",
+			"require": "core/js/libraries/require",
+			"backbone": "core/js/libraries/backbone",
+			"underscore": "core/js/libraries/underscore",
+			"handlebars": "core/js/libraries/handlebars",
+			"jquery": "core/js/libraries/jquery",
+			"bowser": "core/js/libraries/bowser",
+			"imageReady": "core/js/libraries/imageReady",
+	        "inview": "core/js/libraries/inview",
+	        "scrollTo": "core/js/libraries/scrollTo",
+	        "coreJS/libraries/bowser": "core/js/libraries/bowser",
+	        "coreJS/accessibility": "core/js/accessibility",
+	        "coreJS/adapt": "core/js/adapt",
+	        "coreJS/adaptCollection": "core/js/adaptCollection",
+	        "coreJS/device": "core/js/device",
+	        "coreJS/drawer": "core/js/drawer",
+	        "coreJS/helpers": "core/js/helpers",
+	        "coreJS/notify": "core/js/notify",
+	        "coreJS/popupManager": "core/js/popupManager",
+	        "coreJS/router": "core/js/router",
+	        "coreJS/scriptLoader": "core/js/scriptLoader",
+	        "coreViews": "core/js/views",
+	        "coreViews/accessibilityView": "core/js/views/accessibilityView",
+	        "coreViews/adaptView": "core/js/views/adaptView",
+	        "coreViews/articleView": "core/js/views/articleView",
+	        "coreViews/blockView": "core/js/views/blockView",
+	        "coreViews/buttonsView": "core/js/views/buttonsView",
+	        "coreViews/componentView": "core/js/views/componentView",
+	        "coreViews/drawerView": "core/js/views/drawerView",
+	        "coreViews/menuView": "core/js/views/menuView",
+	        "coreViews/navigationView": "core/js/views/navigationView",
+	        "coreViews/notifyPushView": "core/js/views/notifyPushView",
+	        "coreViews/notifyView": "core/js/views/notifyView",
+	        "coreViews/pageView": "core/js/views/pageView",
+	        "coreViews/questionView": "core/js/views/questionView",
+	        "coreModels": "core/js/models",
+	        "coreModels/adaptModel": "core/js/models/adaptModel",
+	        "coreModels/articleModel": "core/js/models/articleModel",
+	        "coreModels/backboneModel": "core/js/models/backboneModel",
+	        "coreModels/blockModel": "core/js/models/blockModel",
+	        "coreModels/componentModel": "core/js/models/componentModel",
+	        "coreModels/configModel": "core/js/models/configModel",
+	        "coreModels/contentObjectModel": "core/js/models/contentObjectModel",
+	        "coreModels/courseModel": "core/js/models/courseModel",
+	        "coreModels/notifyModel": "core/js/models/notifyModel",
+	        "coreModels/routerModel": "core/js/models/routerModel",
+	        "coreHelpers": "core/js/helpers",
+	        "templates": "core/js/libraries/templates",
+	        "components/components": "core/js/libraries/components",
+	        "extensions/extensions": "core/js/libraries/extensions",
+	        "menu/menu": "core/js/libraries/menu",
+	        "theme/theme": "core/js/libraries/theme"
+		},
+		"core": {
+			"core": "core/js/libraries/core",
+			"require": "core/js/libraries/require",
+	        "modernizr": "core/js/libraries/modernizr",
+			"backbone": "core/js/libraries/backbone",
+			"underscore": "core/js/libraries/underscore",
+			"handlebars": "core/js/libraries/handlebars",
+			"jquery": "core/js/libraries/jquery",
+			"bowser": "core/js/libraries/bowser",
+			"imageReady": "core/js/libraries/imageReady",
+	        "inview": "core/js/libraries/inview",
+	        "scrollTo": "core/js/libraries/scrollTo",
+	        "coreJS/libraries/bowser": "core/js/libraries/bowser",
+	        "swfObject": "core/js/libraries/swfObject",
+	        "velocity": "core/js/libraries/velocity",
+	        "consoles": "core/js/libraries/consoles"			
+		}
+		
+    },
+    "exclude": [
+    	"require"
+	]
+}

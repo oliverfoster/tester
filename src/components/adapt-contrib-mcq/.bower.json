@@ -1,0 +1,26 @@
+{
+  "name": "adapt-contrib-mcq",
+  "homepage": "https://github.com/adaptlearning/adapt-contrib-mcq",
+  "authors": [
+    "Daryl Hedley <darylhedley@hotmail.com>"
+  ],
+  "displayName": "Multiple Choice Question",
+  "component": "mcq",
+  "description": "A multiple choice question component",
+  "main": "/js/adapt-contrib-mcq.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": "GPLv3",
+  "_release": "01bcd74119",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "01bcd741192c0aa5ce73c8b84c554a0e8db4b193"
+  },
+  "_source": "https://github.com/cgkineo/adapt-contrib-mcq.git",
+  "_target": "develop",
+  "_originalSource": "adapt-contrib-mcq",
+  "_direct": true
+}

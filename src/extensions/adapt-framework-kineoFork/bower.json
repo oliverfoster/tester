@@ -1,0 +1,15 @@
+{
+  "name": " ",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cgkineo/adapt-framework-kineoFork",
+  "authors": [
+    "Gavin McMaster <gavin.mcmaster@kineo.com>"
+  ],
+  "description": "Extension incorporating functionality to support Kineo projects",
+  "main": "/js/adapt-framework-kineoFork.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}

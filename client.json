@@ -1,0 +1,5 @@
+{
+	"fwkInterfaceLoader": {
+		"load": "config/ui.json"
+	}
+}
